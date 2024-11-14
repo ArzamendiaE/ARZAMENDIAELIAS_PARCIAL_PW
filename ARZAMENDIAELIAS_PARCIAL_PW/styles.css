@@ -1,0 +1,109 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos del cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Menú de navegación */
+header {
+    background-color: #333;
+    padding: 1em 0;
+    text-align: center;
+}
+.nav-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+}
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.nav-menu a:hover {
+    color: #f4b400;
+}
+
+/* Contenido principal */
+main {
+    flex: 1;
+    padding: 2em;
+    text-align: center;
+}
+.intro {
+    margin-bottom: 2em;
+}
+.buttons-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
+}
+.button-wrapper {
+    text-align: center;
+}
+.animated-button {
+    display: inline-block;
+    padding: 1em 2em;
+    color: white;
+    background-color: #007bff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Animaciones de los botones */
+.animated-button.slide:hover {
+    transform: translateX(10px);
+}
+.animated-button.grow:hover {
+    transform: scale(1.1);
+}
+.animated-button.rotate:hover {
+    transform: rotate(15deg);
+}
+.animated-button.pulse:hover {
+    animation: pulse 1s infinite;
+}
+.animated-button.bounce:hover {
+    animation: bounce 0.5s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
