@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Imágenes del Deportista</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <style>
+        /* Global styling */
+        body {
+            background-image: url('images/a1.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            color: #fff;
+        }
+
+        /* Gallery section */
+        .galeria {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        /* Image container styling */
+        .imagen {
+            position: relative;
+            width: 250px;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .imagen img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 8px;
+        }
+
+        /* Description overlay */
+        .descripcion {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            text-align: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        /* Hover effect for description */
+        .imagen:hover .descripcion {
+            opacity: 1;
+        }
+    </style>
+
+    <section class="galeria">
+        <div class="imagen" id="imagen1">
+            <img src="images/a1.jpg" alt="Deportista 1">
+            <div class="descripcion">
+                <h3>Héctor "El Huracán" Vargas</h3>
+                <p>Un peso pesado mexicano conocido por su fuerza devastadora y estilo implacable en el cuadrilátero. Su sobrenombre viene de su habilidad para dominar a sus rivales en un torbellino de golpes precisos y contundentes que deja sin opciones a sus oponentes..</p>
+            </div>
+        </div>
+        <div class="imagen" id="imagen2">
+            <img src="images/b1.jpg" alt="Deportista 2">
+            <div class="descripcion">
+                <h3>Dante "Puño de Fuego" Rizzo</h3>
+                <p>Un boxeador italiano en el peso mediano, temido por su velocidad y potencia. Su característica derecha es tan rápida y fuerte que parece encender el aire en llamas; por eso, es famoso por "incendiar" el ring cada vez que pelea.</p>
+            </div>
+        </div>
+        <div class="imagen" id="imagen3">
+            <img src="images/b2.jpg" alt="Deportista 3">
+            <div class="descripcion">
+                <h3>Luca "El Destructor" Moreno</h3>
+                <p>Un boxeador argentino en la categoría semipesado que ha ganado fama por su inquebrantable resistencia. Los rivales saben que, si entran al ring con él, se enfrentan a un poder aplastante capaz de romper hasta la defensa más fuerte.</p>
+            </div>
+        </div>
+        <div class="imagen" id="imagen4">
+            <img src="images/c2.jpg" alt="Deportista 4">
+            <div class="descripcion">
+                <h3>Samuel "Puños de Hierro" Castellanos</h3>
+                <p>Un peso welter colombiano que combina técnica con una fuerza poco común. Apodado “Puños de Hierro” por su capacidad para noquear a sus oponentes con precisión y determinación, su estrategia es ir directo al punto débil de cada rival</p>
+            </div>
+        </div>
+        <div class="imagen" id="imagen5">
+            <img src="images/c1.jpg" alt="Deportista 5">
+            <div class="descripcion">
+                <h3>Kai "El Dragón Silencioso" Nakamura</h3>
+                <p>Un peso ligero japonés con una técnica impecable y un estilo de lucha sereno pero mortal. Apodado “El Dragón Silencioso” porque rara vez muestra sus emociones, pero desata una fuerza explosiva en el momento justo, dejando a sus rivales atónitos y sin tiempo de reacción.</p>
+            </div>
+        </div>
+        <div class="imagen" id="imagen6">
+            <img src="images/client1.png" alt="Deportista 6">
+            <div class="descripcion">
+                <h3>Raúl "El Relámpago" Torres</h3>
+                <p>Un peso pluma español famoso por su velocidad y reflejos. Su apodo, "El Relámpago," refleja su habilidad para esquivar y atacar en fracciones de segundo, dejando a sus rivales siempre un paso atrás y sorprendidos por sus movimientos fulminantes.</p>
+            </div>
+        </div>
+        <div class="imagen" id="imagen7">
+            <img src="images/client2.png" alt="Deportista 7">
+            <div class="descripcion">
+                <h3>Boris "El Martillo Ruso" Ivanov</h3>
+                <p>Un peso pesado ruso que ha ganado respeto por su increíble fuerza y resistencia. Con un estilo directo y demoledor, se le llama "El Martillo" porque golpea con una fuerza que parece imposible de detener, derribando incluso a los oponentes más duros.</p>
+            </div>
+        </div>
+        <div class="imagen" id="imagen8">
+            <img src="images/hero-bg.jpg" alt="Deportista 8">
+            <div class="descripcion">
+                <h3>Alejandro "La Sombra" García</h3>
+                <p>Un peso ligero cubano con una defensa impecable y un estilo táctico que desconcierta a sus rivales. Conocido como "La Sombra" por su habilidad para moverse sin ser tocado, García es un maestro en esquivar ataques y contraatacar en el momento perfecto, como si siempre estuviera un paso adelante.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

@@ -107,3 +107,203 @@ footer {
     text-align: center;
     padding: 1em;
 }
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos del cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+    background-color: #f4f4f9;
+}
+
+/* Encabezado y biografía */
+header {
+    text-align: center;
+    margin-bottom: 2em;
+}
+header h1 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+header p {
+    font-size: 1.1em;
+    color: #555;
+    max-width: 600px;
+}
+
+/* Sección de Carrera */
+.career-section {
+    margin-bottom: 2em;
+    text-align: center;
+}
+.career-section h2 {
+    font-size: 1.8em;
+    margin-bottom: 1em;
+}
+.career-table {
+    width: 100%;
+    max-width: 600px;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+.career-table th, .career-table td {
+    padding: 0.8em;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+.career-table th {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Sección de Contacto */
+.contact-section {
+    text-align: center;
+}
+.contact-section h2 {
+    font-size: 1.8em;
+    margin-bottom: 1em;
+}
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin-bottom: 1em;
+}
+.social-icon {
+    display: inline-block;
+    padding: 1em;
+    border-radius: 50%;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s, background-color 0.3s;
+}
+.social-icon.facebook { background-color: #3b5998; }
+.social-icon.twitter { background-color: #1da1f2; }
+.social-icon.instagram { background-color: #e4405f; }
+.social-icon.linkedin { background-color: #0077b5; }
+
+/* Animaciones para los iconos */
+.social-icon:hover {
+    transform: scale(1.2) rotate(10deg);
+    filter: brightness(1.2);
+}
+
+/* Estilo para el enlace del currículum */
+.resume-link {
+    font-size: 1.1em;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+.resume-link:hover {
+    text-decoration: underline;
+}
+/* Reset de estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Contenedor de la galería */
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin-top: 20px;
+}
+
+/* Estilo para cada imagen */
+.imagen {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.imagen img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+/* Efectos de animación */
+#imagen1:hover img {
+    transform: scale(1.1);
+}
+#imagen2:hover img {
+    transform: rotate(10deg);
+}
+#imagen3:hover img {
+    transform: translateX(10px);
+}
+#imagen4:hover img {
+    transform: translateY(-10px);
+}
+#imagen5:hover img {
+    transform: scale(1.1) rotate(-5deg);
+}
+#imagen6:hover img {
+    transform: translateX(-10px) scale(1.05);
+}
+#imagen7:hover img {
+    transform: scale(1.05) rotate(5deg) translateY(10px);
+}
+#imagen8:hover img {
+    transform: translateX(10px) rotate(-10deg);
+}
+
+/* Descripción */
+.descripcion {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.imagen:hover .descripcion {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.descripcion h3 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.descripcion p {
+    font-size: 14px;
+}
